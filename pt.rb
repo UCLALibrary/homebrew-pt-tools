@@ -5,20 +5,20 @@
 class Pt < Formula
   desc "CLI to interact with a Pairtree without knowing the internal structure"
   homepage "https://github.com/UCLALibrary/pt-tools"
-  version "0.0.1"
+  version "0.1.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/UCLALibrary/pt-tools/releases/download/v0.0.1/pt_Darwin_x86_64.zip"
-      sha256 "0816028f8e578364064d1e70265398f977ce717b8b72eddfb333d7d2f65fd51a"
+      url "https://github.com/UCLALibrary/pt-tools/releases/download/v0.1.0/pt_Darwin_x86_64.zip"
+      sha256 "2aa7f71f0a4b69b508cf1d3e9d98025d71218755fb5641db7cd522700eca7519"
 
       def install
         bin.install "pt"
       end
     end
     on_arm do
-      url "https://github.com/UCLALibrary/pt-tools/releases/download/v0.0.1/pt_Darwin_arm64.zip"
-      sha256 "0c4e2e315927197f1e92e8c03fb6ad0a1ff6ea7b626fa90cd292c486b272d3ba"
+      url "https://github.com/UCLALibrary/pt-tools/releases/download/v0.1.0/pt_Darwin_arm64.zip"
+      sha256 "a4f9347b17675f87ee2c37fad828126ee1279ac7ae14d7555b947c2efbbf0a17"
 
       def install
         bin.install "pt"
@@ -29,8 +29,8 @@ class Pt < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/UCLALibrary/pt-tools/releases/download/v0.0.1/pt_Linux_x86_64.tar.gz"
-        sha256 "a69e52c2950cbdca04ea8ed2408bb92b8d4b0db336dafa0bccdefb74bf5708ce"
+        url "https://github.com/UCLALibrary/pt-tools/releases/download/v0.1.0/pt_Linux_x86_64.tar.gz"
+        sha256 "a64797ce59491eec520a87d2ffea223b033da135f7a5a050e949d60b5138c9f7"
 
         def install
           bin.install "pt"
@@ -39,8 +39,8 @@ class Pt < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/UCLALibrary/pt-tools/releases/download/v0.0.1/pt_Linux_arm64.tar.gz"
-        sha256 "8a60b0e07ea69d811566c15b208d15070e36503bafe49186fad48a8ce32447ee"
+        url "https://github.com/UCLALibrary/pt-tools/releases/download/v0.1.0/pt_Linux_arm64.tar.gz"
+        sha256 "8200cd7d4d8cb80612ce77e24db97400f6762d242d5d9552f5bb3e6becf11f0d"
 
         def install
           bin.install "pt"
