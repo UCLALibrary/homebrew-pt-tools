@@ -10,7 +10,7 @@ class Pt < Formula
   on_macos do
     on_intel do
       url "https://github.com/UCLALibrary/pt-tools/releases/download/v0.0.1/pt_Darwin_x86_64.zip"
-      sha256 "6cccdea48b3745b69000bfe0b5af9bfd4cb1899cab4341901ab6d82df351811a"
+      sha256 "0816028f8e578364064d1e70265398f977ce717b8b72eddfb333d7d2f65fd51a"
 
       def install
         bin.install "pt"
@@ -18,7 +18,7 @@ class Pt < Formula
     end
     on_arm do
       url "https://github.com/UCLALibrary/pt-tools/releases/download/v0.0.1/pt_Darwin_arm64.zip"
-      sha256 "daca709dfa5723eb25db97ed1860f955701021869dfd2324696f6d5d0e615730"
+      sha256 "0c4e2e315927197f1e92e8c03fb6ad0a1ff6ea7b626fa90cd292c486b272d3ba"
 
       def install
         bin.install "pt"
@@ -30,7 +30,7 @@ class Pt < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/UCLALibrary/pt-tools/releases/download/v0.0.1/pt_Linux_x86_64.tar.gz"
-        sha256 "a08c3a5e77121f2bac65c3ef1566264b933362c10051e76af47bcada4f5aae0d"
+        sha256 "a69e52c2950cbdca04ea8ed2408bb92b8d4b0db336dafa0bccdefb74bf5708ce"
 
         def install
           bin.install "pt"
@@ -40,7 +40,7 @@ class Pt < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/UCLALibrary/pt-tools/releases/download/v0.0.1/pt_Linux_arm64.tar.gz"
-        sha256 "a93731dc14e77687c4228e6d12b8eed35077edc975210b880087abc61c2c0217"
+        sha256 "8a60b0e07ea69d811566c15b208d15070e36503bafe49186fad48a8ce32447ee"
 
         def install
           bin.install "pt"
